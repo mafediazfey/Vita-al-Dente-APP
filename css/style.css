@@ -1,0 +1,196 @@
+
+:root {
+  --color-vino: #7b1e22;
+  --color-verde: #3b6e4d;
+  --color-crema: #fdf6f0;
+  --color-texto: #222;
+  --color-gris: #888;
+}
+
+
+body, .page, .view, .page-content {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-crema);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--color-vino);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.navbar {
+  background: var(--color-vino);
+  color: #fff;
+}
+
+.navbar .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar a.link i {
+  color: #fff;
+}
+
+#panel {
+  background: var(--color-vino);
+  color: #fff;
+}
+
+#panel-profile {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#panel-profile img.user-avatar {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#panel-profile h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#menu-list .item-title {
+  color: #fff;
+  font-size: 16px;
+}
+
+#menu-list i {
+  color: var(--color-verde);
+}
+
+
+#welcome {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#welcome h1 {
+  font-size: 28px;
+  color: var(--color-vino);
+}
+
+#welcome h1 span {
+  color: var(--color-verde);
+}
+
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: var(--color-vino);
+}
+
+.card p {
+  color: var(--color-gris);
+  font-size: 14px;
+}
+
+.card .material-icons {
+  font-size: 24px;
+  color: var(--color-verde);
+}
+
+
+.button {
+  background: var(--color-verde);
+  color: #fff;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #2e553d;
+}
+
+
+.precio {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-vino);
+}
+
+.color-gris {
+  color: var(--color-gris);
+}
+
+
+.toolbar {
+  background: var(--color-vino);
+}
+
+.toolbar .material-icons {
+  color: #fff;
+  font-size: 26px;
+}
+
+
+.login-screen {
+  background: var(--color-crema);
+}
+
+.login-screen-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-vino);
+  margin-bottom: 20px;
+}
+
+.login-screen input {
+  border: 1px solid var(--color-vino);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#btnLogin {
+  background: var(--color-verde);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

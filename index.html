@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vita al Dente</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<div id="app">
+	
+	<!-- Panel Lateral -->
+	<section id="panel" class="panel panel-left panel-cover">
+		<div id="panel-profile" class="block text-center">
+			<img src="img/profile-avatar.png" alt="" class="img-fluid user-avatar">
+			<h4>Bienvenido</h4>
+		</div>
+		
+		<div class="block">
+			<div id="menu-list" class="list">
+				<ul>
+					<li>
+						<a href="/home/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">home</i></div>
+							<div class="item-inner"><div class="item-title">Inicio</div></div>
+						</a>
+					</li>
+					<li>
+						<a href="/menu/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">restaurant_menu</i></div>
+							<div class="item-inner"><div class="item-title">Selecciones</div></div>
+						</a>
+					</li>
+					<li>
+						<a href="/carrito/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">shopping_cart</i></div>
+							<div class="item-inner"><div class="item-title">Mi Carrito</div></div>
+						</a>
+					</li>
+					<li>
+						<a href="/reservas/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">event</i></div>
+							<div class="item-inner"><div class="item-title">Reservas</div></div>
+						</a>
+					</li>
+					<li>
+						<a href="/about/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">info</i></div>
+							<div class="item-inner"><div class="item-title">Sobre Nosotros</div></div>
+						</a>
+					</li>
+					<li>
+						<a href="/perfil/" class="item-link item-content panel-close">
+							<div class="item-media"><i class="material-icons">account_circle</i></div>
+							<div class="item-inner"><div class="item-title">Perfil</div></div>
+						</a>
+					</li>
+				</ul>				
+			</div>
+		</div>
+	</section>
+	
+	<!-- Vista Principal -->
+	<div class="view view-main view-init">
+	
+		<section data-name="home" class="page">
+		
+			<!-- Navbar superior -->
+			<nav class="navbar">
+				<div class="navbar-bg"></div>
+				<div class="navbar-inner">
+					<div class="title">Vita al Dente</div>
+					<div class="right">
+						<a href="#" class="link panel-open" data-panel="left">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			</nav>
+			
+			<section class="page-content">
+			
+				<!-- Hero -->
+				<div id="welcome" class="block">
+					<h1><span>Sabores</span> <br>Auténticos de Italia</h1>
+				</div>
+				
+				<!-- Platillo destacado -->
+				<div id="producto" class="block">
+					<article class="card">
+						<div class="card-content card-content-padding">
+							<div class="row">
+								<article class="col-30">
+									<h3>Lasaña de Carne</h3>
+									<ul>
+										<li>Porción Grande</li>
+										<li>Receta Tradicional</li>
+									</ul>
+								</article>
+								<article class="col-70">
+									<img src="img/lasagna.jpg" alt="Lasaña" class="img-fluid">
+								</article>
+							</div>
+							<div class="row mt-5">
+								<article class="col-40">
+									<p class="precio"><span class="color-gris"><s>L.250</s></span> <i class="material-icons">east</i> L.199</p>
+								</article>
+								<article class="col-60">
+									<a href="/producto/" class="button button-fill button-round">Ordenar Ahora</a>
+								</article>
+							</div>
+						</div>
+					</article>
+				</div>
+				
+				<!-- Selecciones -->
+				<h2 class="block-title">Selecciones de la Casa</h2>
+				<div id="selecciones" class="block card-productos">
+					<div class="row">
+						<article class="col">
+							<div class="card">
+								<div class="card-content card-content-padding text-center">
+									<img src="img/pasta1.jpg" alt="" class="img-fluid">
+									<h4>Bucatini Amatriciana</h4>
+									<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+								</div>
+							</div>
+						</article>
+						<article class="col">
+							<div class="card">
+								<div class="card-content card-content-padding text-center">
+									<img src="img/macarrones.jpg" alt="" class="img-fluid">
+									<h4>Macarrones Napolitana</h4>
+									<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				
+				<!-- Slider de pizzas -->
+				<h2 class="block-title">Nuestras Pizzas</h2>
+				<div id="pizzas" class="block card-productos">
+					<div class="swiper-container swiper-init" data-slides-per-view="2" data-space-between="10" data-centered-slides="true">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding text-center">
+										<img src="img/pizza1.jpg" alt="Pizza Margarita" class="img-fluid">
+										<h4>Pizza Margarita</h4>
+										<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card-content card-content-padding text-center">
+										<img src="img/pizza2.jpg" alt="Pizza Pepperoni" class="img-fluid">
+										<h4>Pepperoni</h4>
+										<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+									</div>
+								</article>
+							</div>
+						</div><!-- swiper-wrapper -->
+					</div><!-- swiper-container -->
+				</div>
+			
+			</section><!--/page-content -->
+		
+		</section><!--/page -->
+		
+		<!-- Toolbar inferior -->
+		<nav class="toolbar tabbar toolbar-bottom">
+			<div class="toolbar-inner">
+				<a href="/home/" class="tab-link tab-link-active"><i class="material-icons">home</i></a>
+				<a href="/favoritos/" class="tab-link"><i class="material-icons">favorite</i></a>
+				<a href="/carrito/" class="tab-link"><i class="material-icons">shopping_basket</i></a>
+			</div>
+		</nav>
+		
+	</div><!--/view -->
+	
+	<!-- Login -->
+	<section class="login-screen modal-in" id="modal-login">
+		<div class="view">
+			<div class="page">
+				<div class="page-content login-screen-content">
+					<div class="login-screen-title">Vita al Dente</div>
+					<form id="form-login">
+						<div class="list">
+							<ul>
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-title item-label">Usuario</div>
+										<div class="item-input-wrap">
+											<input type="text" name="username" placeholder="Tu usuario" required>
+										</div>
+									</div>
+								</li>
+								<li class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-title item-label">Contraseña</div>
+										<div class="item-input-wrap">
+											<input type="password" name="password" placeholder="Tu contraseña" required>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="list block">
+							<ul>
+								<li><a id="btnLogin" class="button button-fill" href="#">Ingresar</a></li>
+							</ul>
+							<div class="block-footer">
+								<p><a class="link login-screen-close" href="#">Entrar como Invitado</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</div><!--/app -->
+
+<!-- Scripts -->
+<script src="js/framework7.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
