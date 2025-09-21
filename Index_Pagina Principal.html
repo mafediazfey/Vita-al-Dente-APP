@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Página Principal - Vita al Dente</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-color: #7b2b27;
+      --frame-color: #222; 
+      --tagline-color: #f2f2f2;
+      --btn-bg: #6fb041; 
+      --btn-text: #000;
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #111; 
+    }
+
+    .phone-frame{
+      width: 390px;
+      max-width: calc(100vw - 24px);
+      height: 844px;
+      background: var(--frame-color);
+      padding: 12px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.6);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+    }
+
+    .screen{
+      width: 360px;
+      height: 820px;
+      background-color: var(--bg-color);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      padding-top: 16px;
+      box-sizing: border-box;
+
+      
+      background-image: url("pizza.png");  
+      background-repeat: repeat;
+      background-size: 80px; /* 👈 ajusta el tamaño del icono */
+      background-position: center top;
+
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .topbar{
+      width:100%;
+      color: #bfbfbf;
+      font-size: 13px;
+      padding: 6px 16px;
+      box-sizing:border-box;
+      align-self:flex-start;
+      opacity:0.9;
+    }
+
+    .logo-circle{
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.06);
+      margin: 48px 0 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: inset 0 6px 0 rgba(255,255,255,0.08),
+                  0 6px 18px rgba(0,0,0,0.45);
+      position: relative;
+      border: 6px solid rgba(255,255,255,0.06);
+    }
+
+    .logo-circle::before{
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius:50%;
+      border: 8px solid rgba(255,255,255,0.18);
+      transform: rotate(-12deg);
+      top: -12px;
+      left: -12px;
+      pointer-events: none;
+    }
+
+    .logo-placeholder{
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: transparent;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .logo-placeholder img{
+      max-width:100%;
+      max-height:100%;
+      display:block;
+      object-fit:contain;
+    }
+
+    .tagline-wrap{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+      margin-top: 18px;
+      padding: 0 28px;
+      box-sizing:border-box;
+    }
+
+    .tower{
+      width: 36px;
+      height: 56px;
+      transform: rotate(-12deg);
+      opacity: .95;
+      filter: drop-shadow(0 2px 0 rgba(0,0,0,.4));
+    }
+
+    .tagline{
+      color: var(--tagline-color);
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      line-height: 1;
+      text-align:left;
+      text-shadow: 0 2px 0 rgba(0,0,0,.45);
+      white-space: nowrap;
+    }
+
+    .menu-btn{
+      margin-top: 18px;
+      background: var(--btn-bg);
+      border-radius: 28px;
+      padding: 12px 48px;
+      font-size: 28px;
+      font-weight:700;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+      color: var(--btn-text);
+      font-family: "Playfair Display", serif;
+    }
+
+    @media (max-width:420px){
+      .phone-frame{ width: 360px; height: 780px; }
+      .screen{ width: 340px; height: 760px; }
+      .logo-circle{ width:200px; height:200px; }
+      .logo-circle::before{ width:230px; height:230px; top:-10px; left:-10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-frame">
+    <main class="screen">
+<div class="logo-circle">
+      <div class="logo-placeholder">
+        <img src="Logo Vita al dente.png" alt="Logo - Vita al Dente" width="900">
+        </div>
+      </div>
+
+      <div class="tagline-wrap">
+        <svg class="tower" viewBox="0 0 64 100" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#0b0b0b">
+            <rect x="14" y="6" width="36" height="8" rx="1"/>
+            <rect x="12" y="18" width="40" height="8" rx="1"/>
+            <rect x="10" y="30" width="44" height="8" rx="1"/>
+            <rect x="8" y="42" width="48" height="8" rx="1"/>
+            <rect x="6" y="54" width="52" height="8" rx="1"/>
+            <rect x="10" y="74" width="44" height="10" rx="2"/>
+            <rect x="18" y="86" width="28" height="6" rx="2"/>
+          </g>
+        </svg>
+
+        <div class="tagline">Sabores auténticos de Italia</div>
+      </div>
+
+      <button class="menu-btn" type="button">Menu</button>
+
+    </main>
+  </div>
+
+</body>
+</html>
+
