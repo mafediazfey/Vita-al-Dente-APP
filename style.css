@@ -1,0 +1,94 @@
+:root{
+  --color-vino: #7b1e22;
+  --color-verde: #3b6e4d;
+  --color-crema: #fdf6f0;
+  --color-texto: #222;
+  --color-gris: #888;
+}
+
+/* ===== Reset / base ===== */
+html,body { height:100%; }
+body, .page, .view, .page-content {
+  margin:0; padding:0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-crema);
+  color: var(--color-texto);
+}
+
+/* ===== NAVBAR (específico) ===== */
+.navbar {
+  background: var(--color-vino) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.navbar .title { color:#fff !important; font-weight:700; }
+
+/* ===== PANEL LATERAL ===== */
+.panel.panel-left { background: var(--color-vino) !important; color:#fff; }
+.panel .block { color:#fff; }
+#panel-profile img.user-avatar { width:80px; height:80px; border-radius:50%; }
+
+/* ===== HERO ===== */
+#welcome { text-align:center; padding:36px 16px; }
+#welcome h1 { font-size:28px; margin:0; color:var(--color-vino); }
+#welcome h1 span { color:var(--color-verde); }
+
+/* ===== CARDS / PRODUCTOS ===== */
+.card { border-radius:12px !important; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.06) !important; }
+.card img { width:100%; height:auto; display:block; object-fit:cover; }
+.card .card-content { padding:12px !important; }
+.card h4 { color: var(--color-vino); margin:10px 0 6px; font-weight:700; }
+.card p { color:var(--color-gris); margin:0 0 8px; }
+
+/* ===== Selecciones (swiper cards) ===== */
+.card-food { width: 220px !important; background: #fff; border-radius:10px; }
+.card-food img { height:140px; object-fit:cover; }
+
+/* ===== CTA / botones ===== */
+.button { border-radius:24px !important; text-transform:none; font-weight:700; }
+.button-fill { background: var(--color-verde) !important; color:#fff !important; border:none !important; }
+.button-outline { border-color: var(--color-vino) !important; color: var(--color-vino) !important; }
+
+/* ===== PRECIO ===== */
+.precio { font-weight:700; color:var(--color-vino); font-size:1.05rem; }
+
+/* ===== TOOLBAR (inferior) ===== */
+.toolbar { background: var(--color-vino) !important; }
+.toolbar .material-icons { color:#fff !important; }
+
+/* ===== LOGIN ===== */
+.login-screen .login-screen-title { color:var(--color-vino); font-weight:700; }
+.login-screen input { border:1px solid rgba(0,0,0,0.08); border-radius:8px; padding:10px; }
+
+/* ===== PAGINA ESPECIFICA: NOSOTROS ===== */
+.page[data-name="nosotros"] .team-img { width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid var(--color-vino); }
+
+/* ===== PAGINA ESPECIFICA: PERFIL ===== */
+.page[data-name="perfil"] .user-avatar-lg { width:110px; height:110px; border-radius:50%; object-fit:cover; }
+
+/* ===== TESTS / DEBUG helpers ===== */
+/* muestra que el css se aplica (quita en producción) */
+html.debug body { outline: 4px dashed rgba(0,0,0,0.08); }
+
+/* ===== responsive tweaks ===== */
+@media(min-width:768px){
+  #welcome h1 { font-size:36px; }
+  .card-food { width: 300px !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
