@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Deslizante</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .side-menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 300px;
+      height: 100%;
+      background-color: #8B2E2E; 
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+      overflow-y: auto;
+    }
+
+    .side-menu .back {
+      font-size: 24px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      width: 150px; 
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid white;
+      margin: 15px 0;
+    }
+
+    .menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .menu-links a {
+      display: block;
+      background: #5C2A2A; 
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .menu-links a:hover {
+      background: #732E2E;
+    }
+
+    /* Horario */
+    .horario {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    
+    .social {
+      background: black;
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .social p {
+      margin: 0 0 10px 0;
+    }
+
+    .social a img {
+      width: 35px; 
+      margin: 0 10px;
+      filter: brightness(0) invert(1); 
+      transition: transform 0.3s;
+    }
+
+    .social a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="side-menu">
+    <div class="back">←</div>
+
+    <!-- AQUI VA EL LOGO -->
+    <div class="logo">
+      <img src="Logo Vita al dente.png" alt="Logo Vita al Dente">
+    </div>
+
+    <hr>
+
+   
+    <div class="menu-links">
+      <a href="#">MENU</a>
+      <a href="#">SELECCIONES DE LA CASA</a>
+      <a href="#">MI CARRITO</a>
+      <a href="#">PERFIL</a>
+      <a href="#">RESERVA</a>
+      <a href="#">SOBRE NOSOTROS</a>
+    </div>
+
+    <hr>
+
+   
+    <div class="horario">
+      <p><strong>HORARIO</strong></p>
+      <p>LUN-DOM: 11:00 AM - 10:00 PM</p>
+    </div>
+
+    
+    <div class="social">
+      <p>Síguenos</p>
+      <a href="#"><img src="Screenshot 2025-09-21 185330.png" alt="Facebook"></a>
+      <a href="#"><img src="Screenshot 2025-09-21 185334.png" alt="Instagram"></a>
+      <a href="#"><img src="Screenshot 2025-09-21 185338.png" alt="Twitter"></a>
+      <a href="#"><img src="tiktok-icon.png" alt="TikTok"></a>
+    </div>
+  </div>
+
+</body>
+</html>
