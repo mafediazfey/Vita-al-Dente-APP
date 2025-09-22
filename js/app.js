@@ -8,10 +8,10 @@ var app = new Framework7({
   },
   routes: [
     { path: '/home/', url: 'index.html' },
-    { path: '/menu/', url: 'pages/menu.html' },
-    { path: '/carrito/', url: 'pages/carrito.html' },
-    { path: '/perfil/', url: 'pages/perfil.html' },
-    { path: '/nosotros/', url: 'pages/nosotros.html' }
+    { path: '/menu/', url: 'menu.html' },
+    { path: '/carrito/', url: 'carrito.html' },
+    { path: '/perfil/', url: 'perfil.html' },
+    { path: '/nosotros/', url: 'nosotros.html' }
   ]
 });
 
